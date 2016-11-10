@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/miscript.js"></script>
+
+</head>
+<body id="index">
+
+	<header>
+		<div class="row">
+			<div class="col-sm-3">
+				<!-- logotipo -->
+				<img height="80px" src="http://labolsaporantonomasia.es/wp-content/uploads/2012/11/galp-logo.jpg" alt="Logotipo GALP">
+			</div>
+			<div class="col-sm-9 text-center">
+				<h1>GALP Extremadura</h1>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="row">
+			<div class="col-sm-6 text-center">
+				<h4>TARJETA</h4>
+				<button id="botontarjeta">Mostrar pago con tarjeta</button>
+				
+				<form id="formutarjeta" action="Validar" method="post">
+					<input name="numero" type="text" placeholder="Numero tarjeta"><br>
+					<input name="codigo" type="text" placeholder="Código"><br>
+					<input name="enviar" type="submit" value="Pagar">
+				</form>
+				
+			</div>
+			<div class="col-sm-6 text-center">
+				<h4>EFECTIVO</h4>
+				<button id="botonefectivo">Mostrar pago en efectivo</button>
+
+				<form id="formuefectivo" action="Validar" method="post">
+					<input name="importe" type="text" placeholder="Importe"><br>
+					<input name="enviar" type="submit" value="Pagar">
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="text-right">
+		<p>Copyright GALP</p>
+	</footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
